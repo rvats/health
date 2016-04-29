@@ -24,6 +24,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Create", "Create", "{DD426C
 		Exercise\sql\query\Create\CreateCommentTable.sql = Exercise\sql\query\Create\CreateCommentTable.sql
 		Exercise\sql\query\Create\CreateDatabaseWithNeededParameters.sql = Exercise\sql\query\Create\CreateDatabaseWithNeededParameters.sql
 		Exercise\sql\query\Create\CreateDRISTable.sql = Exercise\sql\query\Create\CreateDRISTable.sql
+		Exercise\sql\query\Create\CreateLstFoodCatsTable.sql = Exercise\sql\query\Create\CreateLstFoodCatsTable.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Insert", "Insert", "{A8D9A15C-5A9C-48BE-835A-12E7E80BF6A6}"
