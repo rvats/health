@@ -20,6 +20,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "query", "query", "{33D37CCF-CA3C-42C4-9760-5B47DC307077}"
 	ProjectSection(SolutionItems) = preProject
 		Exercise\sql\query\CreateCommentTable.sql = Exercise\sql\query\CreateCommentTable.sql
+		Exercise\sql\query\CreateDRISTable.sql = Exercise\sql\query\CreateDRISTable.sql
 		Exercise\sql\query\CreateDatabaseWithNeededParameters.sql = Exercise\sql\query\CreateDatabaseWithNeededParameters.sql
 	EndProjectSection
 EndProject
