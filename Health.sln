@@ -18,23 +18,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "health", "health", "{37D66E
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "query", "query", "{33D37CCF-CA3C-42C4-9760-5B47DC307077}"
-	ProjectSection(SolutionItems) = preProject
-		Exercise\sql\query\CreateCommentTable.sql = Exercise\sql\query\CreateCommentTable.sql
-		Exercise\sql\query\CreateDatabaseWithNeededParameters.sql = Exercise\sql\query\CreateDatabaseWithNeededParameters.sql
-		Exercise\sql\query\CreateDRISTable.sql = Exercise\sql\query\CreateDRISTable.sql
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Create", "Create", "{DD426CCE-A3DA-4451-B8D0-0DAA26CB9BF3}"
 	ProjectSection(SolutionItems) = preProject
-		Exercise\sql\query\CreateCommentTable.sql = Exercise\sql\query\CreateCommentTable.sql
 		Exercise\sql\query\Create\CreateCommentTable.sql = Exercise\sql\query\Create\CreateCommentTable.sql
-		Exercise\sql\query\CreateDatabaseWithNeededParameters.sql = Exercise\sql\query\CreateDatabaseWithNeededParameters.sql
 		Exercise\sql\query\Create\CreateDatabaseWithNeededParameters.sql = Exercise\sql\query\Create\CreateDatabaseWithNeededParameters.sql
-		Exercise\sql\query\CreateDRISTable.sql = Exercise\sql\query\CreateDRISTable.sql
 		Exercise\sql\query\Create\CreateDRISTable.sql = Exercise\sql\query\Create\CreateDRISTable.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Insert", "Insert", "{A8D9A15C-5A9C-48BE-835A-12E7E80BF6A6}"
+	ProjectSection(SolutionItems) = preProject
+		Exercise\sql\query\Insert\InsertIntoDRIS.sql = Exercise\sql\query\Insert\InsertIntoDRIS.sql
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Delete", "Delete", "{4D8C3598-AA91-40AC-B7E7-83B4FBBE1E96}"
 EndProject
