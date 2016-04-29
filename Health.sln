@@ -10,6 +10,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Exercise\sql\Health.sql = Exercise\sql\Health.sql
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{1B51B30F-9BAC-489A-83E6-1903A1551FFB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "health", "health", "{37D66E41-375C-4068-9EF9-870679B4943B}"
+	ProjectSection(SolutionItems) = preProject
+		Exercise\sql\Health\CreateDatabaseWithTablesAndData.sql = Exercise\sql\Health\CreateDatabaseWithTablesAndData.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "query", "query", "{33D37CCF-CA3C-42C4-9760-5B47DC307077}"
+	ProjectSection(SolutionItems) = preProject
+		Exercise\sql\query\CreateCommentTable.sql = Exercise\sql\query\CreateCommentTable.sql
+		Exercise\sql\query\CreateDatabaseWithNeededParameters.sql = Exercise\sql\query\CreateDatabaseWithNeededParameters.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,5 +38,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1B51B30F-9BAC-489A-83E6-1903A1551FFB} = {25A26DF1-B73F-44EC-9D4A-FAF153AA922D}
+		{37D66E41-375C-4068-9EF9-870679B4943B} = {1B51B30F-9BAC-489A-83E6-1903A1551FFB}
+		{33D37CCF-CA3C-42C4-9760-5B47DC307077} = {1B51B30F-9BAC-489A-83E6-1903A1551FFB}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,89 @@
+/************************************************************************************************
+---- Object:  CreateDatabaseWithNeededParameters.sql
+---- Aim: This query when executed will create the entire database with the correct configuration.
+---- SQL Server Script 1.0.0  for Windows
+---- Host: localhost    
+---- Current Database: Health
+---- Version History: Script Date: 4/28/2016 9:43:54 PM
+---- Revision Notes:
+-------- Initial Draft Started: 4/28/2016 - Started Working on the Schema
+-------- Initial Draft Completed: 
+************************************************************************************************/
+USE [master]
+GO
+DROP DATABASE [Health]
+GO
+CREATE DATABASE [Health]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'Exercise', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL12.SQLEXPRESS\MSSQL\DATA\Exercise.mdf' , SIZE = 3264KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
+ LOG ON 
+( NAME = N'Exercise_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL12.SQLEXPRESS\MSSQL\DATA\Exercise.ldf' , SIZE = 1024KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
+GO
+ALTER DATABASE [Health] SET COMPATIBILITY_LEVEL = 120
+GO
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [Health].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+ALTER DATABASE [Health] SET ANSI_NULL_DEFAULT ON 
+GO
+ALTER DATABASE [Health] SET ANSI_NULLS ON 
+GO
+ALTER DATABASE [Health] SET ANSI_PADDING ON 
+GO
+ALTER DATABASE [Health] SET ANSI_WARNINGS ON 
+GO
+ALTER DATABASE [Health] SET ARITHABORT ON 
+GO
+ALTER DATABASE [Health] SET AUTO_CLOSE OFF 
+GO
+ALTER DATABASE [Health] SET AUTO_SHRINK OFF 
+GO
+ALTER DATABASE [Health] SET AUTO_UPDATE_STATISTICS ON 
+GO
+ALTER DATABASE [Health] SET CURSOR_CLOSE_ON_COMMIT OFF 
+GO
+ALTER DATABASE [Health] SET CURSOR_DEFAULT  LOCAL 
+GO
+ALTER DATABASE [Health] SET CONCAT_NULL_YIELDS_NULL ON 
+GO
+ALTER DATABASE [Health] SET NUMERIC_ROUNDABORT OFF 
+GO
+ALTER DATABASE [Health] SET QUOTED_IDENTIFIER ON 
+GO
+ALTER DATABASE [Health] SET RECURSIVE_TRIGGERS OFF 
+GO
+ALTER DATABASE [Health] SET  DISABLE_BROKER 
+GO
+ALTER DATABASE [Health] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+GO
+ALTER DATABASE [Health] SET DATE_CORRELATION_OPTIMIZATION OFF 
+GO
+ALTER DATABASE [Health] SET TRUSTWORTHY OFF 
+GO
+ALTER DATABASE [Health] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+GO
+ALTER DATABASE [Health] SET PARAMETERIZATION SIMPLE 
+GO
+ALTER DATABASE [Health] SET READ_COMMITTED_SNAPSHOT OFF 
+GO
+ALTER DATABASE [Health] SET HONOR_BROKER_PRIORITY OFF 
+GO
+ALTER DATABASE [Health] SET RECOVERY FULL 
+GO
+ALTER DATABASE [Health] SET  MULTI_USER 
+GO
+ALTER DATABASE [Health] SET PAGE_VERIFY CHECKSUM  
+GO
+ALTER DATABASE [Health] SET DB_CHAINING OFF 
+GO
+ALTER DATABASE [Health] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+GO
+ALTER DATABASE [Health] SET TARGET_RECOVERY_TIME = 0 SECONDS 
+GO
+ALTER DATABASE [Health] SET DELAYED_DURABILITY = DISABLED 
+GO
+ALTER DATABASE [Health] SET  READ_WRITE 
+GO
