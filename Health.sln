@@ -20,16 +20,25 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "query", "query", "{33D37CCF-CA3C-42C4-9760-5B47DC307077}"
 	ProjectSection(SolutionItems) = preProject
 		Exercise\sql\query\CreateCommentTable.sql = Exercise\sql\query\CreateCommentTable.sql
-		Exercise\sql\query\CreateDRISTable.sql = Exercise\sql\query\CreateDRISTable.sql
 		Exercise\sql\query\CreateDatabaseWithNeededParameters.sql = Exercise\sql\query\CreateDatabaseWithNeededParameters.sql
+		Exercise\sql\query\CreateDRISTable.sql = Exercise\sql\query\CreateDRISTable.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Create", "Create", "{DD426CCE-A3DA-4451-B8D0-0DAA26CB9BF3}"
 	ProjectSection(SolutionItems) = preProject
 		Exercise\sql\query\CreateCommentTable.sql = Exercise\sql\query\CreateCommentTable.sql
+		Exercise\sql\query\Create\CreateCommentTable.sql = Exercise\sql\query\Create\CreateCommentTable.sql
 		Exercise\sql\query\CreateDatabaseWithNeededParameters.sql = Exercise\sql\query\CreateDatabaseWithNeededParameters.sql
+		Exercise\sql\query\Create\CreateDatabaseWithNeededParameters.sql = Exercise\sql\query\Create\CreateDatabaseWithNeededParameters.sql
 		Exercise\sql\query\CreateDRISTable.sql = Exercise\sql\query\CreateDRISTable.sql
+		Exercise\sql\query\Create\CreateDRISTable.sql = Exercise\sql\query\Create\CreateDRISTable.sql
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Insert", "Insert", "{A8D9A15C-5A9C-48BE-835A-12E7E80BF6A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Delete", "Delete", "{4D8C3598-AA91-40AC-B7E7-83B4FBBE1E96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Update", "Update", "{A7BDABA9-56C8-4B83-A2C6-67E130216B4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,5 +61,8 @@ Global
 		{37D66E41-375C-4068-9EF9-870679B4943B} = {1B51B30F-9BAC-489A-83E6-1903A1551FFB}
 		{33D37CCF-CA3C-42C4-9760-5B47DC307077} = {1B51B30F-9BAC-489A-83E6-1903A1551FFB}
 		{DD426CCE-A3DA-4451-B8D0-0DAA26CB9BF3} = {33D37CCF-CA3C-42C4-9760-5B47DC307077}
+		{A8D9A15C-5A9C-48BE-835A-12E7E80BF6A6} = {33D37CCF-CA3C-42C4-9760-5B47DC307077}
+		{4D8C3598-AA91-40AC-B7E7-83B4FBBE1E96} = {33D37CCF-CA3C-42C4-9760-5B47DC307077}
+		{A7BDABA9-56C8-4B83-A2C6-67E130216B4D} = {33D37CCF-CA3C-42C4-9760-5B47DC307077}
 	EndGlobalSection
 EndGlobal
