@@ -1,5 +1,5 @@
 /************************************************************************************************
----- Object:  CreateDatabaseWithTablesAndData.sql
+---- Object:  InsertIntoDRIS.sql
 ---- Aim: This query when executed will create the entire database and populate it with the needed Tables 
 		and the Data needed to create the Health Assist Software.
 ---- SQL Server Script 1.0.0  for Windows
@@ -11,7 +11,7 @@
 -------- Initial Draft Completed: 
 ************************************************************************************************/
 --
--- Dumping data for table 'dris'
+-- Dumping data for table [dris]
 --
 USE [Health]
 GO
