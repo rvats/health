@@ -31,6 +31,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Insert", "Insert", "{A8D9A15C-5A9C-48BE-835A-12E7E80BF6A6}"
 	ProjectSection(SolutionItems) = preProject
 		Exercise\sql\query\Insert\InsertIntoDRIS.sql = Exercise\sql\query\Insert\InsertIntoDRIS.sql
+		Exercise\sql\query\Insert\InsertIntoLstFoodCats.sql = Exercise\sql\query\Insert\InsertIntoLstFoodCats.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Delete", "Delete", "{4D8C3598-AA91-40AC-B7E7-83B4FBBE1E96}"
