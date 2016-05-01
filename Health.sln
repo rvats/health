@@ -26,14 +26,42 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Create", "Create", "{DD426C
 		Exercise\sql\query\Create\CreateDatabaseWithNeededParameters.sql = Exercise\sql\query\Create\CreateDatabaseWithNeededParameters.sql
 		Exercise\sql\query\Create\CreateDRISTable.sql = Exercise\sql\query\Create\CreateDRISTable.sql
 		Exercise\sql\query\Create\CreateFoodDescsTable.sql = Exercise\sql\query\Create\CreateFoodDescsTable.sql
+		Exercise\sql\query\Create\CreateFootNotesTable.sql = Exercise\sql\query\Create\CreateFootNotesTable.sql
 		Exercise\sql\query\Create\CreateLstFoodCatsTable.sql = Exercise\sql\query\Create\CreateLstFoodCatsTable.sql
+		Exercise\sql\query\Create\CreateNutrientDataTable.sql = Exercise\sql\query\Create\CreateNutrientDataTable.sql
+		Exercise\sql\query\Create\CreateNutrientDefsTable.sql = Exercise\sql\query\Create\CreateNutrientDefsTable.sql
+		Exercise\sql\query\Create\CreateUserDiariesTable.sql = Exercise\sql\query\Create\CreateUserDiariesTable.sql
+		Exercise\sql\query\Create\CreateUserDiaryFoodsTable.sql = Exercise\sql\query\Create\CreateUserDiaryFoodsTable.sql
+		Exercise\sql\query\Create\CreateUserDiaryItemsTable.sql = Exercise\sql\query\Create\CreateUserDiaryItemsTable.sql
+		Exercise\sql\query\Create\CreateUserDiaryMealsTable.sql = Exercise\sql\query\Create\CreateUserDiaryMealsTable.sql
+		Exercise\sql\query\Create\CreateUserDiaryNotesTable.sql = Exercise\sql\query\Create\CreateUserDiaryNotesTable.sql
+		Exercise\sql\query\Create\CreateUserFoodsTable.sql = Exercise\sql\query\Create\CreateUserFoodsTable.sql
+		Exercise\sql\query\Create\CreateUserMealItemsTable.sql = Exercise\sql\query\Create\CreateUserMealItemsTable.sql
+		Exercise\sql\query\Create\CreateUserMealsTable.sql = Exercise\sql\query\Create\CreateUserMealsTable.sql
+		Exercise\sql\query\Create\CreateUserNutrientsTable.sql = Exercise\sql\query\Create\CreateUserNutrientsTable.sql
+		Exercise\sql\query\Create\CreateUsersTable.sql = Exercise\sql\query\Create\CreateUsersTable.sql
+		Exercise\sql\query\Create\CreateWeightsTable.sql = Exercise\sql\query\Create\CreateWeightsTable.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Insert", "Insert", "{A8D9A15C-5A9C-48BE-835A-12E7E80BF6A6}"
 	ProjectSection(SolutionItems) = preProject
 		Exercise\sql\query\Insert\InsertIntoDRIS.sql = Exercise\sql\query\Insert\InsertIntoDRIS.sql
 		Exercise\sql\query\Insert\InsertIntoFoodDescs.sql = Exercise\sql\query\Insert\InsertIntoFoodDescs.sql
+		Exercise\sql\query\Insert\InsertIntoFootNotes.sql = Exercise\sql\query\Insert\InsertIntoFootNotes.sql
 		Exercise\sql\query\Insert\InsertIntoLstFoodCats.sql = Exercise\sql\query\Insert\InsertIntoLstFoodCats.sql
+		Exercise\sql\query\Insert\InsertIntoNutritionData.sql = Exercise\sql\query\Insert\InsertIntoNutritionData.sql
+		Exercise\sql\query\Insert\InsertIntoNutritionDefs.sql = Exercise\sql\query\Insert\InsertIntoNutritionDefs.sql
+		Exercise\sql\query\Insert\InsertIntoUserDiaries.sql = Exercise\sql\query\Insert\InsertIntoUserDiaries.sql
+		Exercise\sql\query\Insert\InsertIntoUserDiaryFoods.sql = Exercise\sql\query\Insert\InsertIntoUserDiaryFoods.sql
+		Exercise\sql\query\Insert\InsertIntoUserDiaryItems.sql = Exercise\sql\query\Insert\InsertIntoUserDiaryItems.sql
+		Exercise\sql\query\Insert\InsertIntoUserDiaryMeals.sql = Exercise\sql\query\Insert\InsertIntoUserDiaryMeals.sql
+		Exercise\sql\query\Insert\InsertIntoUserDiaryNotes.sql = Exercise\sql\query\Insert\InsertIntoUserDiaryNotes.sql
+		Exercise\sql\query\Insert\InsertIntoUserFoods.sql = Exercise\sql\query\Insert\InsertIntoUserFoods.sql
+		Exercise\sql\query\Insert\InsertIntoUserMealItems.sql = Exercise\sql\query\Insert\InsertIntoUserMealItems.sql
+		Exercise\sql\query\Insert\InsertIntoUserMeals.sql = Exercise\sql\query\Insert\InsertIntoUserMeals.sql
+		Exercise\sql\query\Insert\InsertIntoUserNutrients.sql = Exercise\sql\query\Insert\InsertIntoUserNutrients.sql
+		Exercise\sql\query\Insert\InsertIntoUsers.sql = Exercise\sql\query\Insert\InsertIntoUsers.sql
+		Exercise\sql\query\Insert\InsertIntoWeights.sql = Exercise\sql\query\Insert\InsertIntoWeights.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Delete", "Delete", "{4D8C3598-AA91-40AC-B7E7-83B4FBBE1E96}"
