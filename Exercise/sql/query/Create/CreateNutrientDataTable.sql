@@ -1,7 +1,6 @@
 /************************************************************************************************
----- Object:  CreateDatabaseWithTablesAndData.sql
----- Aim: This query when executed will create the entire database and populate it with the needed Tables 
-		and the Data needed to create the Health Assist Software.
+---- Object: CreateNutrientDataTable.sql
+---- Aim: This query when executed will create the NutrientData Table.
 ---- SQL Server Script 1.0.0  for Windows
 ---- Host: localhost    
 ---- Current Database: Health
@@ -11,33 +10,35 @@
 -------- Initial Draft Completed: 
 ************************************************************************************************/
 --
--- Table structure for table 'nutrientData'
+-- Table structure for table [dbo].[NutrientData]
 --
-DROP TABLE IF EXISTS 'nutrientData';
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE 'nutrientData' (
-  'ndb_no' varchar(5) NOT NULL,
-  'nutr_no' varchar(3) NOT NULL,
-  'nutr_val' float NOT NULL,
-  'num_data_pts' int(5) NOT NULL,
-  'std_error' float DEFAULT NULL,
-  'src_cd' varchar(2) NOT NULL,
-  'deriv_cd' varchar(4) DEFAULT NULL,
-  'ref_ndb_no' varchar(5) DEFAULT NULL,
-  'add_nutr_mark' varchar(1) DEFAULT NULL,
-  'num_studies' int(2) DEFAULT NULL,
-  'min' float DEFAULT NULL,
-  'max' float DEFAULT NULL,
-  'df' int(2) DEFAULT NULL,
-  'low_eb' float DEFAULT NULL,
-  'up_eb' float DEFAULT NULL,
-  'stat_cmt' varchar(10) DEFAULT NULL,
-  'cc' varchar(1) DEFAULT NULL,
-  'id' int(11) NOT NULL AUTO_INCREMENT,
-  'usda_status' enum('active','deleted') DEFAULT 'active',
-  PRIMARY KEY ('id'),
-  KEY 'ndb_no' ('ndb_no'),
-  KEY 'nutr_no' ('nutr_no')
-) ENGINE=MyISAM AUTO_INCREMENT=655105 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
+USE [Health]
+GO
+DROP TABLE [dbo].[NutrientData];
+GO
+CREATE TABLE [dbo].[NutrientData](
+	[ND_ndb_no] varchar(5) NOT NULL,
+	[NDnutr_no] varchar(3) NOT NULL,
+	[NDnutr_val] float NOT NULL,
+	[NDnum_data_pts] int NOT NULL,
+	[NDstd_error] float DEFAULT NULL,
+	[NDsrc_cd] varchar(2) NOT NULL,
+	[NDderiv_cd] varchar(4) DEFAULT NULL,
+	[NDref_ndb_no] varchar(5) DEFAULT NULL,
+	[NDadd_nutr_mark] varchar(1) DEFAULT NULL,
+	[NDnum_studies] int DEFAULT NULL,
+	[NDmin] float DEFAULT NULL,
+	[NDmax] float DEFAULT NULL,
+	[NDdf] int DEFAULT NULL,
+	[NDlow_eb] float DEFAULT NULL,
+	[NDup_eb] float DEFAULT NULL,
+	[NDstat_cmt] varchar(10) DEFAULT NULL,
+	[NDCC] varchar(1) DEFAULT NULL,
+	[NDID] int NOT NULL,
+	[NDUSDAStatus] VARCHAR(10) NOT NULL CHECK ([NDUSDAStatus] IN('Active', 'Deleted')) DEFAULT 'Active',
+	CONSTRAINT [PK_ND] PRIMARY KEY CLUSTERED 
+	(
+		[NDID] ASC
+	)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO

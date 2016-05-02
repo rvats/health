@@ -1,7 +1,6 @@
 /************************************************************************************************
----- Object:  CreateDatabaseWithTablesAndData.sql
----- Aim: This query when executed will create the entire database and populate it with the needed Tables 
-		and the Data needed to create the Health Assist Software.
+---- Object:  CreateNutrientDefsTable.sql
+---- Aim: This query when executed will create the NutrientDefs Table
 ---- SQL Server Script 1.0.0  for Windows
 ---- Host: localhost    
 ---- Current Database: Health
@@ -13,20 +12,23 @@
 --
 -- Table structure for table 'nutrientDefs'
 --
-DROP TABLE IF EXISTS 'nutrientDefs';
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE 'nutrientDefs' (
-  'nutr_no' varchar(3) NOT NULL,
-  'units' varchar(7) NOT NULL,
-  'tagname' varchar(20) DEFAULT NULL,
-  'nutrdesc' varchar(60) NOT NULL,
-  'num_dec' varchar(1) NOT NULL,
-  'sr_order' int(6) NOT NULL,
-  'id' int(11) NOT NULL AUTO_INCREMENT,
-  'is_default' tinyint(1) DEFAULT NULL,
-  'usda_status' enum('active','deleted') DEFAULT 'active',
-  PRIMARY KEY ('id'),
-  KEY 'nutr_no' ('nutr_no')
-) ENGINE=MyISAM AUTO_INCREMENT=141 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
+USE [Health]
+GO
+DROP TABLE [dbo].[NutrientDefs];
+GO
+CREATE TABLE [dbo].[NutrientDefs](
+	[NDefs_nutr_no] varchar(3) NOT NULL,
+	[NDefsunits] varchar(7) NOT NULL,
+	[NDefstagname] varchar(20) DEFAULT NULL,
+	[NDefsnutrdesc] varchar(60) NOT NULL,
+	[NDefsnum_dec] varchar(1) NOT NULL,
+	[NDefssr_order] int NOT NULL,
+	[NDefsID] int NOT NULL,
+	[NDefsis_default] tinyint DEFAULT NULL,
+	[NDefsUSDAStatus] VARCHAR(10) NOT NULL CHECK ([NDefsUSDAStatus] IN('Active', 'Deleted')) DEFAULT 'Active',
+	CONSTRAINT [PK_NDefs] PRIMARY KEY CLUSTERED 
+	(
+		[NDefsID] ASC
+	)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO

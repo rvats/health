@@ -1,5 +1,5 @@
 ﻿/************************************************************************************************
----- Object:  CreateCommentTable.sql
+---- Object: CreateDRISTable.sql
 ---- Aim: This query when executed will create the DRIS table.
 ---- SQL Server Script 1.0.0  for Windows
 ---- Host: localhost    

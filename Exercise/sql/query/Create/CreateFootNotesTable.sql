@@ -1,5 +1,5 @@
 /************************************************************************************************
----- Object:  CreateFootNotesTable.sql
+---- Object: CreateFootNotesTable.sql
 ---- Aim: This query when executed will create the FootNotes Table.
 ---- SQL Server Script 1.0.0  for Windows
 ---- Host: localhost    

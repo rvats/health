@@ -1,5 +1,5 @@
 /************************************************************************************************
----- Object:  CreateDatabaseWithNeededParameters.sql
+---- Object: _CreateDatabaseWithNeededParameters.sql
 ---- Aim: This query when executed will create the entire database with the correct configuration.
 ---- SQL Server Script 1.0.0  for Windows
 ---- Host: localhost    

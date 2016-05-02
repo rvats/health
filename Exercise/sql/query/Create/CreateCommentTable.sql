@@ -1,5 +1,5 @@
 ﻿/************************************************************************************************
----- Object:  CreateCommentTable.sql
+---- Object: CreateCommentTable.sql
 ---- Aim: This query when executed will create the CommentTable for storing devlopment and User
 		Comments.
 ---- SQL Server Script 1.0.0  for Windows

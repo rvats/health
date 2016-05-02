@@ -1,5 +1,5 @@
 /************************************************************************************************
----- Object:  CreateFoodDescsTable.sql
+---- Object: CreateFoodDescsTable.sql
 ---- Aim: This query when executed will create the FootDescs Table.
 ---- SQL Server Script 1.0.0  for Windows
 ---- Host: localhost    
