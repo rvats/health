@@ -1,7 +1,6 @@
 /************************************************************************************************
 ---- Object:  CreateFoodDescsTable.sql
----- Aim: This query when executed will create the entire database and populate it with the needed Tables 
-		and the Data needed to create the Health Assist Software.
+---- Aim: This query when executed will create the FootDescs Table.
 ---- SQL Server Script 1.0.0  for Windows
 ---- Host: localhost    
 ---- Current Database: Health
@@ -34,7 +33,7 @@ CREATE TABLE [dbo].[FoodDescs](
 	[FoodDescs_cho_factor] float DEFAULT NULL,
 	[FoodDescsID] int NOT NULL,
 	[FoodDescs_popularity] int DEFAULT NULL,
-	[FoodDescsUSDAStatus]  VARCHAR(10) NOT NULL CHECK ([FoodDescsUSDAStatus] IN('Active', 'Deleted')) DEFAULT 'Active',
+	[FoodDescsUSDAStatus] VARCHAR(10) NOT NULL CHECK ([FoodDescsUSDAStatus] IN('Active', 'Deleted')) DEFAULT 'Active',
 	CONSTRAINT [PK_FoodDescs] PRIMARY KEY CLUSTERED 
 	(
 		[FoodDescsID] ASC

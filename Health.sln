@@ -22,8 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "query", "query", "{33D37CCF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Create", "Create", "{DD426CCE-A3DA-4451-B8D0-0DAA26CB9BF3}"
 	ProjectSection(SolutionItems) = preProject
+		Exercise\sql\query\Create\_CreateDatabaseWithNeededParameters.sql = Exercise\sql\query\Create\_CreateDatabaseWithNeededParameters.sql
 		Exercise\sql\query\Create\CreateCommentTable.sql = Exercise\sql\query\Create\CreateCommentTable.sql
-		Exercise\sql\query\Create\CreateDatabaseWithNeededParameters.sql = Exercise\sql\query\Create\CreateDatabaseWithNeededParameters.sql
 		Exercise\sql\query\Create\CreateDRISTable.sql = Exercise\sql\query\Create\CreateDRISTable.sql
 		Exercise\sql\query\Create\CreateFoodDescsTable.sql = Exercise\sql\query\Create\CreateFoodDescsTable.sql
 		Exercise\sql\query\Create\CreateFootNotesTable.sql = Exercise\sql\query\Create\CreateFootNotesTable.sql

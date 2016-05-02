@@ -1,7 +1,6 @@
 ﻿/************************************************************************************************
 ---- Object:  CreateCommentTable.sql
----- Aim: This query when executed will create the CommentTable for storing devlopment and User
-		Comments.
+---- Aim: This query when executed will create the DRIS table.
 ---- SQL Server Script 1.0.0  for Windows
 ---- Host: localhost    
 ---- Current Database: Health

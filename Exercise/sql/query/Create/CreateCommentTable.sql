@@ -8,7 +8,7 @@
 ---- Version History: Script Date: 4/28/2016 9:43:54 PM
 ---- Revision Notes:
 -------- Initial Draft Started: 4/28/2016 - Started Working on the Schema
--------- Initial Draft Completed: 
+-------- Initial Draft Completed: Making Changes to the Data Structure from the NutriDB Database
 ************************************************************************************************/
 --
 -- Table structure for table Comment

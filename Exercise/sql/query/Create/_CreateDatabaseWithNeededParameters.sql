@@ -7,7 +7,7 @@
 ---- Version History: Script Date: 4/28/2016 9:43:54 PM
 ---- Revision Notes:
 -------- Initial Draft Started: 4/28/2016 - Started Working on the Schema
--------- Initial Draft Completed: 
+-------- Initial Draft Completed: This Database is created with Default MSSQL configuration.
 ************************************************************************************************/
 USE [master]
 GO
