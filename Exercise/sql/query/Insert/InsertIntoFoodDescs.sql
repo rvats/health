@@ -1,7 +1,6 @@
 /************************************************************************************************
 ---- Object:  CreateFoodDescsTable.sql
----- Aim: This query when executed will create the entire database and populate it with the needed Tables 
-		and the Data needed to create the Health Assist Software.
+---- Aim: This query when executed will populate the FoodDescs Table with Data.
 ---- SQL Server Script 1.0.0  for Windows
 ---- Host: localhost    
 ---- Current Database: Health
@@ -11,7 +10,7 @@
 -------- Initial Draft Completed: 
 ************************************************************************************************/
 --
--- Dumping data for table [foodDescs]
+-- Dumping data for table [FoodDescs]
 --
 USE [Health]
 GO
