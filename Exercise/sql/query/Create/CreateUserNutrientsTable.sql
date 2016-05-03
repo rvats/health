@@ -1,7 +1,6 @@
 /************************************************************************************************
----- Object:  CreateDatabaseWithTablesAndData.sql
----- Aim: This query when executed will create the entire database and populate it with the needed Tables 
-		and the Data needed to create the Health Assist Software.
+---- Object:  CreateUserNutrientsTable.sql
+---- Aim: This query when executed will create the UserNutrients Table.
 ---- SQL Server Script 1.0.0  for Windows
 ---- Host: localhost    
 ---- Current Database: Health
@@ -11,15 +10,19 @@
 -------- Initial Draft Completed: 
 ************************************************************************************************/
 --
--- Table structure for table 'userNutrients'
+-- Table structure for table [dbo].[UserNutrients]
 --
-DROP TABLE IF EXISTS 'userNutrients';
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE 'userNutrients' (
-  'id' int(11) NOT NULL AUTO_INCREMENT,
-  'user' int(11) DEFAULT NULL,
-  'nutrient' varchar(3) DEFAULT NULL,
-  PRIMARY KEY ('id')
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
+USE [Health]
+GO
+DROP TABLE [dbo].[UserNutrients];
+GO
+CREATE TABLE [dbo].[UserNutrients](
+	[UNID] int NOT NULL,
+	[UNUser] int DEFAULT NULL,
+	[UNNutrient] varchar(3) DEFAULT NULL,
+	CONSTRAINT [PK_UN] PRIMARY KEY CLUSTERED 
+	(
+		[UNID] ASC
+	)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO

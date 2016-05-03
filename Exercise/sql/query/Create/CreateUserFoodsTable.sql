@@ -1,7 +1,6 @@
 /************************************************************************************************
----- Object:  CreateDatabaseWithTablesAndData.sql
----- Aim: This query when executed will create the entire database and populate it with the needed Tables 
-		and the Data needed to create the Health Assist Software.
+---- Object:  CreateUserFoodsTable.sql
+---- Aim: This query when executed will create the UserFoods Table.
 ---- SQL Server Script 1.0.0  for Windows
 ---- Host: localhost    
 ---- Current Database: Health
@@ -11,20 +10,24 @@
 -------- Initial Draft Completed: 
 ************************************************************************************************/
 --
--- Table structure for table 'userFoods'
+-- Table structure for table 'UserFoods'
 --
-DROP TABLE IF EXISTS 'userFoods';
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE 'userFoods' (
-  'id' int(11) NOT NULL AUTO_INCREMENT,
-  'food' varchar(5) DEFAULT NULL,
-  'weight' int(11) DEFAULT NULL,
-  'user' int(11) DEFAULT NULL,
-  'description' varchar(100) DEFAULT NULL,
-  'quantity' float DEFAULT NULL,
-  'favorite' tinyint(1) DEFAULT NULL,
-  'popularity' int(11) DEFAULT NULL,
-  PRIMARY KEY ('id')
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
+USE [Health]
+GO
+DROP TABLE [dbo].[UserFoods];
+GO
+CREATE TABLE [dbo].[UserFoods](
+	[UFID] int NOT NULL,
+	[UFFood] varchar(5) DEFAULT NULL,
+	[UFWeight] int DEFAULT NULL,
+	[UFUser] int DEFAULT NULL,
+	[UFDescription] varchar(100) DEFAULT NULL,
+	[UFQuantity] float DEFAULT NULL,
+	[UFFavorite] tinyint DEFAULT NULL,
+	[UFPopularity] int DEFAULT NULL,
+	CONSTRAINT [PK_UF] PRIMARY KEY CLUSTERED 
+	(
+		[UFID] ASC
+	)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO

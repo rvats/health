@@ -1,7 +1,6 @@
 /************************************************************************************************
----- Object:  CreateDatabaseWithTablesAndData.sql
----- Aim: This query when executed will create the entire database and populate it with the needed Tables 
-		and the Data needed to create the Health Assist Software.
+---- Object:  CreateUsersTable.sql
+---- Aim: This query when executed will create the entire Users Table.
 ---- SQL Server Script 1.0.0  for Windows
 ---- Host: localhost    
 ---- Current Database: Health
@@ -11,20 +10,24 @@
 -------- Initial Draft Completed: 
 ************************************************************************************************/
 --
--- Table structure for table 'users'
+-- Table structure for table USERS
 --
-DROP TABLE IF EXISTS 'users';
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE 'users' (
-  'id' int(11) NOT NULL AUTO_INCREMENT,
-  'password' varchar(100) DEFAULT NULL,
-  'username' varchar(25) DEFAULT NULL,
-  'firstname' varchar(25) DEFAULT NULL,
-  'age' tinyint(4) DEFAULT NULL,
-  'gender' varchar(6) DEFAULT NULL,
-  'lastname' varchar(25) DEFAULT NULL,
-  'birthday' bigint(20) DEFAULT NULL,
-  PRIMARY KEY ('id')
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
+USE [Health]
+GO
+DROP TABLE [dbo].[Users];
+GO
+CREATE TABLE [dbo].[Users](
+	[UID] int NOT NULL,
+	[UPassword] varchar(100) DEFAULT NULL,
+	[UUserName] varchar(25) DEFAULT NULL,
+	[UFirstName] varchar(25) DEFAULT NULL,
+	[UAge] tinyint DEFAULT NULL,
+	[UGender] varchar(6) DEFAULT NULL,
+	[ULastName] varchar(25) DEFAULT NULL,
+	[UBirthDay] bigint DEFAULT NULL,
+	CONSTRAINT [PK_U] PRIMARY KEY CLUSTERED 
+	(
+		[UID] ASC
+	)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO

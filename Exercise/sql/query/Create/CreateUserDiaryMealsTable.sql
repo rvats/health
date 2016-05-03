@@ -1,7 +1,6 @@
 /************************************************************************************************
----- Object:  CreateDatabaseWithTablesAndData.sql
----- Aim: This query when executed will create the entire database and populate it with the needed Tables 
-		and the Data needed to create the Health Assist Software.
+---- Object:  CreateUserDiaryMealsTable.sql
+---- Aim: This query when executed will create the UserDiaryMeals Table.
 ---- SQL Server Script 1.0.0  for Windows
 ---- Host: localhost    
 ---- Current Database: Health
@@ -11,15 +10,20 @@
 -------- Initial Draft Completed: 
 ************************************************************************************************/
 --
--- Table structure for table 'userDiaryMeals'
+-- Table structure for table [dbo].[UserDiaryMeals]
 --
-DROP TABLE IF EXISTS 'userDiaryMeals';
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE 'userDiaryMeals' (
-  'id' int(11) NOT NULL AUTO_INCREMENT,
-  'diary' int(11) DEFAULT NULL,
-  'meal' int(11) DEFAULT NULL,
-  'timestamp' int(11) DEFAULT NULL,
-  PRIMARY KEY ('id')
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;/*!40101 SET character_set_client = @saved_cs_client */;
+USE [Health]
+GO
+DROP TABLE [dbo].[UserDiaryMeals];
+GO
+CREATE TABLE [dbo].[UserDiaryMeals](
+	UDMID int NOT NULL,
+	UDMDiary int DEFAULT NULL,
+	UDMMeal int DEFAULT NULL,
+	UDMTimeStamp int DEFAULT NULL,
+	CONSTRAINT [PK_UDM] PRIMARY KEY CLUSTERED 
+	(
+		[UDMID] ASC
+	)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO

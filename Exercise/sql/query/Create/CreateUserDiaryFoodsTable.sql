@@ -1,7 +1,6 @@
 /************************************************************************************************
----- Object:  CreateDatabaseWithTablesAndData.sql
----- Aim: This query when executed will create the entire database and populate it with the needed Tables 
-		and the Data needed to create the Health Assist Software.
+---- Object:  CreateUserDiaryFoodsTable.sql
+---- Aim: This query when executed will create the UserDiaryFoods Table
 ---- SQL Server Script 1.0.0  for Windows
 ---- Host: localhost    
 ---- Current Database: Health
@@ -11,19 +10,23 @@
 -------- Initial Draft Completed: 
 ************************************************************************************************/
 --
--- Table structure for table 'userDiaryFoods'
+-- Table structure for table UserDiaryFoods
 --
-DROP TABLE IF EXISTS 'userDiaryFoods';
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE 'userDiaryFoods' (
-  'id' int(11) NOT NULL AUTO_INCREMENT,
-  'food' varchar(5) DEFAULT NULL,
-  'weight' int(11) DEFAULT NULL,
-  'description' varchar(100) DEFAULT NULL,
-  'quantity' float DEFAULT NULL,
-  'diary' int(11) DEFAULT NULL,
-  'timestamp' int(11) DEFAULT NULL,
-  PRIMARY KEY ('id')
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
+USE [Health]
+GO
+DROP TABLE [dbo].[UserDiaryFoods];
+GO
+CREATE TABLE [dbo].[UserDiaryFoods] (
+	[UDFID] int NOT NULL,
+	[UDFfood] varchar(5) DEFAULT NULL,
+	[UDFweight] int DEFAULT NULL,
+	[UDFdescription] varchar(100) DEFAULT NULL,
+	[UDFquantity] float DEFAULT NULL,
+	[UDFdiary] int DEFAULT NULL,
+	[UDFtimestamp] int DEFAULT NULL,
+	CONSTRAINT [PK_UDF] PRIMARY KEY CLUSTERED 
+	(
+		[UDFID] ASC
+	)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO

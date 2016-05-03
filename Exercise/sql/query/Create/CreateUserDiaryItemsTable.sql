@@ -1,7 +1,6 @@
 /************************************************************************************************
----- Object:  CreateDatabaseWithTablesAndData.sql
----- Aim: This query when executed will create the entire database and populate it with the needed Tables 
-		and the Data needed to create the Health Assist Software.
+---- Object:  CreateUserDiaryItemsTable.sql
+---- Aim: This query when executed will create the CreateUserDiaryItems Table.
 ---- SQL Server Script 1.0.0  for Windows
 ---- Host: localhost    
 ---- Current Database: Health
@@ -11,17 +10,21 @@
 -------- Initial Draft Completed: 
 ************************************************************************************************/
 --
--- Table structure for table 'userDiaryItems'
+-- Table structure for table [dbo].[UserDiaryItems]
 --
-DROP TABLE IF EXISTS 'userDiaryItems';
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE 'userDiaryItems' (
-  'id' int(11) NOT NULL AUTO_INCREMENT,
-  'diary' int(11) DEFAULT NULL,
-  'data' text,
-  'timestamp' int(11) DEFAULT NULL,
-  'type' varchar(10) DEFAULT NULL,
-  PRIMARY KEY ('id')
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
+USE [Health]
+GO
+DROP TABLE [dbo].[UserDiaryItems];
+GO
+CREATE TABLE [dbo].[UserDiaryItems](
+	[UDIID] int NOT NULL,
+	[UDIDiary] int DEFAULT NULL,
+	[UDIData] nvarchar(max),
+	[UDITimeStamp] int DEFAULT NULL,
+	[UDIType] varchar(10) DEFAULT NULL,
+	CONSTRAINT [PK_UDI] PRIMARY KEY CLUSTERED 
+	(
+		[UDIID] ASC
+	)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
