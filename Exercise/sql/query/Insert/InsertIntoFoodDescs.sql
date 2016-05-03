@@ -1,5 +1,5 @@
 /************************************************************************************************
----- Object:  CreateFoodDescsTable.sql
+---- Object:  InsertIntoFoodDescs.sql
 ---- Aim: This query when executed will populate the FoodDescs Table with Data.
 ---- SQL Server Script 1.0.0  for Windows
 ---- Host: localhost    

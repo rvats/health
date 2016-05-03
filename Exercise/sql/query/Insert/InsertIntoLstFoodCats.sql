@@ -1,14 +1,13 @@
 /************************************************************************************************
 ---- Object:  InsertIntoLstFoodCats.sql
----- Aim: This query when executed will create the entire database and populate it with the needed Tables 
-		and the Data needed to create the Health Assist Software.
+---- Aim: This query when executed will populate the LstFoodCats Table with Data.
 ---- SQL Server Script 1.0.0  for Windows
 ---- Host: localhost    
 ---- Current Database: Health
 ---- Version History: Script Date: 4/28/2016 9:43:54 PM
 ---- Revision Notes:
 -------- Initial Draft Started: 4/28/2016 - Started Working on the Schema
--------- Initial Draft Completed: 
+-------- Initial Draft Completed: This version will mark the completion of First Draft
 ************************************************************************************************/
 --
 -- Dumping data for table [LstFoodCats]
